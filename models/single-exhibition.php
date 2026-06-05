@@ -13,8 +13,8 @@ class SingleExhibition extends BaseModel {
     /**
      * Hooks
      */
-    public function hooks() : void {
-        add_filter( 'tms/theme/breadcrumbs/show_breadcrumbs_in_header', fn() => false );
+    public function hooks(): void {
+        \add_filter( 'tms/theme/breadcrumbs/show_breadcrumbs_in_header', fn() => false );
     }
 
     /**
@@ -26,10 +26,6 @@ class SingleExhibition extends BaseModel {
     public function content() {
         $single = Query::get_acf_post( get_queried_object_id() );
         $date   = self::get_date( $single->ID );
-
-        if ( $this->is_past( $single ) ) {
-            $single->image = null;
-        }
 
         if ( ! empty( $date ) ) {
             $single->date = $date;
@@ -44,12 +40,12 @@ class SingleExhibition extends BaseModel {
      * @param int $id The post ID.
      */
     public static function get_date( $id ) {
-        $start_date    = get_field( 'start_date', $id );
+        $start_date    = \get_field( 'start_date', $id );
         $opening_times = '';
 
         if ( ! empty( $start_date ) ) {
             $opening_times = self::reformat_datetime_string( $start_date );
-            $end_date      = get_field( 'end_date', $id );
+            $end_date      = \get_field( 'end_date', $id );
 
             if ( ! empty( $end_date ) ) {
                 $opening_times .= ' - ' . self::reformat_datetime_string( $end_date );

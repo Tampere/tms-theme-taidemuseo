@@ -161,18 +161,17 @@ h4,
 $link-outline-color: #78726d;
 
 main {
-    a:not(.pill):not(.button) {
+    a:not(.pill):not(.button):not(.post-link) {
         text-underline-offset: .125rem;
 
         &:focus {
-            outline: .125rem dotted $link-outline-color !important;
+            outline: .15rem dotted $link-outline-color !important;
             outline-offset: .125rem;
             text-decoration: none !important;
         }
 
         &:active {
             outline: none !important;
-            color: $color-taide-tiili !important;
             text-decoration: none;
         }
     }

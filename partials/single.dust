@@ -14,16 +14,18 @@
                                     </h1>
 
                                     {?content.image}
-                                        <div class="entry__figure pt-2">
-                                            {@image id=content.image.id size="single" /}
+                                        <div class="entry__figure pt-2 has-text-centered">
+                                            {@image id=content.image.id size="large" /}
                                         </div>
 
                                         {>"views/single/single-meta" spacing_class="pt-5 pt-4-desktop pb-5 p-5-tablet" /}
                                     {/content.image}
 
                                     {?content.api_image_url}
-                                        <div class="entry__figure pt-2">
-                                            <img src="{content.api_image_url|url}" loading="lazy" />
+                                        <div class="entry__figure pt-2 has-text-centered">
+                                            <img src="{content.api_image_url|url}"
+                                             {?content.api_image_alt}alt="{content.api_image_alt|attr}"{/content.api_image_alt}
+                                             loading="lazy" />
                                         </div>
 
                                         {>"views/single/single-meta" spacing_class="pt-5 pt-4-desktop pb-5 p-5-tablet" /}
@@ -36,8 +38,8 @@
                                     {/content.has_image}
 
                                     {?content.post_excerpt}
-                                        <p class="entry__lead">
-                                            {content.post_excerpt|s}
+                                        <p class="entry__lead is-size-5">
+                                            {content.post_excerpt|kses}
                                         </p>
                                     {/content.post_excerpt}
 
@@ -46,7 +48,7 @@
                                     {?share_links}
                                         <div class="entry__share-links is-flex is-flex-wrap-wrap is-flex-direction-column is-align-content-flex-start">
                                             <h2 class="h6 mt-6 mb-6 has-text-left">
-                                                {Strings.s.share.share_article|s}
+                                                {Strings.s.share.share_article|html}
                                             </h2>
 
                                             {>"ui/share-links" share_links=share_links li_class="mr-4" /}

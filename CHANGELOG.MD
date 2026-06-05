@@ -7,6 +7,143 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [1.14.1] - 2026-04-12
+
+- TMS-1260: Add sr-only text for opening image-blocks modal
+
+## [1.14.0] - 2026-02-03
+
+- TMS-1164: Remove color changing for button hover-styles
+
+## [1.13.1] - 2025-12-09
+
+- TMS-1223: Fix double quote problem from components bg-color field
+
+## [1.13.0] - 2025-10-01
+
+- TMS-1201: Add iframe-field for video fields
+
+## [1.12.2] - 2025-09-08
+
+- TMS-1190: Add height to single exhibition hero on large monitors
+- TMS-1163: Search results breadcrumbs accessibility fixes
+
+## [1.12.1] - 2025-08-13
+
+- TMS-1160: Fix elements focus outline thickness
+
+## [1.12.0] - 2025-06-23
+
+- TMS-1172: Add video-fields and functionality to hero-component
+
+## [1.11.4] - 2025-04-30
+
+- TMS-1139: Add another link-button to CTA-component
+
+## [1.11.3] - 2025-04-09
+
+- TMS-1114: Change image-meta on cta- & content-columns components
+
+## [1.11.2] - 2025-02-24
+
+- TMS-1100: Show multiple locations for events if available
+
+## [1.11.1] - 2024-11-25
+
+- TMS-1059: Add Sign up-section to event partial
+
+## [1.11.0] - 2024-10-24
+
+- TMS-1075: Redipress 2 filters
+
+## [1.10.3] - 2024-09-25
+
+- TMS-1071: Fix events price element class
+
+## [1.10.2] - 2024-09-25
+
+- TMS-1067: Show price-info for event in listing if it's free
+
+## [1.10.1] - 2024-08-21
+
+- TMS-1057: Increase articles lead-text font-size
+
+## [1.10.0] - 2024-06-26
+
+- TMS-1054: Remove hero overlay-toggle from single page editor
+
+## [1.9.8] - 2024-05-14
+
+- TMS-1029: Change contacts-blocks width
+
+## [1.9.7] - 2024-03-26
+
+- TMS-1021: Remove image carousel modal max-height
+
+## [1.9.6] - 2024-03-18
+
+- TMS-1017: Add image alt-text to imported news single-article
+
+## [1.9.5] - 2023-11-21
+
+- TMS-935: Archive filter accessibility fixes
+
+## [1.9.4] - 2023-10-23
+
+- TMS-970: Add image meta to call-to-action and content-columns components
+
+## [1.9.3] - 2023-10-12
+
+### Fixed
+
+- TMS-982: Fix exhibition-archive year-filters & search
+- TMS-936: Image carousel accessibility fixes
+
+## [1.9.2] - 2023-09-04
+
+### Fixed
+
+- TMS-972: Pagination fix for past exhibitions in exhibition-archive
+
+## [1.9.1] - 2023-04-27
+
+### Fixed
+
+- PIEN-8524: Display API images #162
+
+## [1.9.0] - 2023-04-11
+
+- PIEN-8157: PHP 8.1
+
+## [1.8.8] - 2023-01-30
+
+ - TMS-913: Fix upcoming exhibitions page
+
+## [1.8.7] - 2023-01-27
+
+- TMS-913: Added logo-wall fields for Exhibition CPT single page
+- TMS-913: Added new "Upcoming exhibitions" page for exhibition archive
+- TMS-913: Added "Main exhibition" true/false ACF-field for single exhibition that orders it first if other exhibitions have the same starting date
+- TMS-913: Added info text next to exhibition archive search input
+
+## [1.8.6] - 2022-02-11
+
+### Changed
+
+- TMS-818: Fix images. #137
+
+## [1.8.5] - 2022-10-17
+
+### Fixed
+
+- PIEN-7726: Fix showing images in home page highlight.
+
+## [1.8.4] - 2022-09-28
+
+### Deleted
+
+- PIEN-7660: Image ratio in accordion block.
+
 ## [1.8.3] - 2022-09-20
 
 ### Fixed

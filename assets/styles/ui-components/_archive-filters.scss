@@ -11,6 +11,20 @@
                 margin-top: auto;
             }
         }
+
+        .order-2 {
+            order: 2;
+        }
+
+        .align-items-end {
+            align-items: flex-end;
+        }
+
+        @include until($tablet) {
+            .column {
+                flex-wrap: wrap;
+            }
+        }
     }
 
     .filters-wrapper {
@@ -51,7 +65,7 @@
 .archive-filters {
     &__select-container {
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
         gap: $theme-spacing-oneandhalf;
 
         @include until($tablet) {
@@ -59,11 +73,16 @@
         }
 
         @include from($tablet) {
-            flex-direction: row;
+            flex-direction: unset;
+            flex-wrap: wrap-reverse;
         }
 
         select {
             width: 100%;
         }
+    }
+
+    &__description {
+        width: 100%;
     }
 }
